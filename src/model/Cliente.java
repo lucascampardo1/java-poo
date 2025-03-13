@@ -6,7 +6,7 @@ public class Cliente {
     private String email;
     private String telefone;
 
-    
+
     public String getNome() {
         return nome;
     }
@@ -24,6 +24,13 @@ public class Cliente {
     }
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public void imprimir() {
+        System.out.println("Dados do Cliente");
+        System.out.println("Nome: " + nome);
+        System.out.println("Email: " + email);
+        System.out.println("Telefone: " + telefone);
     }
 
     
