@@ -43,6 +43,16 @@ public class Cliente {
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);
         System.out.println("Telefone: " + telefone);
+        System.out.println("Total de carros do cliente: " + carros.size());
+
+        if(carros.isEmpty()){
+            System.out.println("O cliente ainda não possui carros cadastrados.");
+        } else {
+            System.out.println("Carros do cliente:");
+            for(Carro carro : carros) {
+                carro.imprimir();
+            }
+        }
     }
 
     
