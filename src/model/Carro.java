@@ -7,7 +7,7 @@ public class Carro {
     private String marca;
     private int anoFabricacao;
     private String cor;
-    
+
     public String getModelo() {
         return modelo;
     }
@@ -39,6 +39,15 @@ public class Carro {
         this.cor = cor;
     }
 
+    public void imprimir() {
+        System.out.println("Dados do Carro");
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Placa: " + placa);
+        System.out.println("Marca: " + marca);
+        System.out.println("Ano de Fabricação: " + anoFabricacao);
+        System.out.println("Cor: " + cor);
+        System.out.println("--------------------");
+    }
     
 
 }
